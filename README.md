@@ -9,7 +9,8 @@ This app generates an html file based on the user's input in the terminal to dis
 [Code](#code)  
 [Tests](#tests)  
 [Contributing](#contributing)  
-[License](#license)  
+[License](#license)
+[Acknowledgements](#acknowledgements)  
 [About the Author](#about-the-author)  
 
 ## Introduction
@@ -81,6 +82,9 @@ If you notice any errors in the code, please submit a Github issue.
 
 ![GitHub](https://img.shields.io/github/license/dvorakjt/teamBuilder)
 
+## Acknowledgements
+
+The background photo is by Artem Sapegin on Unsplash. The test.js and htmlRenderer files are boilerplate code provided by Trilogy.
 
 ## About the Author
 
