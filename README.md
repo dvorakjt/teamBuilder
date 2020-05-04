@@ -1,5 +1,5 @@
 # TeamBuilder
-![Screenshot of teamBuilder by dvorakjt](./Assets/screenshots/screen-1.png)
+![Screenshot of teamBuilder by dvorakjt](./Assets/screenshots/screen-1.gif)
 This app generates an html file based on the user's input in the terminal to display information about a development team. A link to the deployed version can be found [here.](https://dvorakjt.github.io/teamBuilder/)
 ## Table of Contents
 
