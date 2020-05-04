@@ -45,9 +45,10 @@ From there, different functions are run depending on what the employee's role is
 Once the employees array is filled, the render function is called create an html file using the array. The render function was mostly pre-coded by Trilogy for this assignment, but I did optimize so that the html page that is generated would look nice.
 
 This is the code I added:  
+        ```
         /*because the boiler plate code returns an html array which itself contains 3 arrays containing the different classes,
         I needed to concatenate these three arrays into one to be able to loop through it item by item.*/ 
-
+        ```
         html = html[0].concat(html[1], html[2]);  
 
         for (let i = 0; i < html.length; i++) {   
