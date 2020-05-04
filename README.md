@@ -37,7 +37,7 @@ Using the application is very straightforward. Simply open the terminal, cd into
 This project is written using JavaScript and HTML (with some CSS sprinkled in directly into the HTML). The Bulma CSS Framework is also used.
 
 The JavaScript files that I wrote are the class definitions (Employee, Manager, Engineer, Intern) and the actual app.js file. The app.js file uses the Inquirer NPM package to ask the user a series of questions relating to each employee. They are asked for the employees name, id, and email. Each of the subclasses of Employee each have their own specific fourth prompt that is asked. To fill in these properties for a new instance of each class, I used this neat one-liner (I researched how to fill several variables with the same property on Stack Overflow, and then combined that with object destructuring to uniquely assign values to name, role, id and email all in one line):  
-    ```js
+    ```
     const [{ role }, { name }, { id }, { email }] = Array(4).fill(answers);
     ```
 From there, different functions are run depending on what the employee's role is.
@@ -45,7 +45,7 @@ From there, different functions are run depending on what the employee's role is
 Once the employees array is filled, the render function is called create an html file using the array. The render function was mostly pre-coded by Trilogy for this assignment, but I did optimize so that the html page that is generated would look nice.
 
 This is the code I added:  
-    ```js
+    ```
         /*because the boiler plate code returns an html array which itself contains 3 arrays containing the different classes,
         I needed to concatenate these three arrays into one to be able to loop through it item by item.*/
         html = html[0].concat(html[1], html[2]);
@@ -61,7 +61,7 @@ This is the code I added:
         //return the formatted array joined into a string
         return renderMain(formattedHtml.join(""));
         };
-
+    ```
 ## Tests
 
 Each of the classes in this app were tested using Jest. while building each class, I installed Jest globally so that I could test each class individually, for example "jest Engineer.test.js" I then used npm run test to test all the classes together.
