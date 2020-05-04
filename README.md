@@ -47,20 +47,20 @@ Once the employees array is filled, the render function is called create an html
 This is the code I added:  
     ```
         /*because the boiler plate code returns an html array which itself contains 3 arrays containing the different classes,
-        I needed to concatenate these three arrays into one to be able to loop through it item by item.*/
-        html = html[0].concat(html[1], html[2]);
-        for (let i = 0; i < html.length; i++) {
-            //after every fourth html element in the array, close the previous "level" div and create a new one
-            const j = i % 4;
-            if (i >= 4 && j === 0) {
-                formattedHtml.push(`</div><div class="level">`);
-            }
-            //push the next html element into the formatted html array
-            formattedHtml.push(html[i]);
-        }
-        //return the formatted array joined into a string
-        return renderMain(formattedHtml.join(""));
-        };
+        I needed to concatenate these three arrays into one to be able to loop through it item by item.*/  
+        html = html[0].concat(html[1], html[2]);  
+        for (let i = 0; i < html.length; i++) {  
+            //after every fourth html element in the array, close the previous "level" div and create a new one  
+            const j = i % 4;  
+            if (i >= 4 && j === 0) {  
+                formattedHtml.push(`</div><div class="level">`);  
+            }  
+            //push the next html element into the formatted html array  
+            formattedHtml.push(html[i]);  
+        }  
+        //return the formatted array joined into a string  
+        return renderMain(formattedHtml.join(""));  
+        };  
     ```
 ## Tests
 
